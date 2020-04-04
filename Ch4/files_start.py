@@ -4,18 +4,40 @@
 
 def main():  
   # Open a file for writing and create it if it doesn't exist
-
-
-  # Open the file for appending text to the end
-
+  # f = open("textfile.txt", "w+")
 
   # write some lines of data to the file
+  # for i in range(10):
+  #   f.write("This is line " + str(i) + "\r\n")
 
-  
   # close the file when done
+  # f.close()
+
+  # Open the file for appending text to the end
+  # f = open("textfile.txt", "a")
+
+  # write some lines of data to the file
+  # for i in range(10):
+  #   f.write("This is another line " + str(i) + "\r\n")
+
+  # close the file when done
+  # f.close()
 
   
   # Open the file back up and read the contents
+  # f = open("textfile.txt", "r")
+
+  # if f.mode == 'r':
+  #   contents = f.read()
+  #   print(contents)
+
+  # Read file line by line
+  f = open("textfile.txt", "r")
+
+  if f.mode == 'r':
+    fl = f.readlines()
+    for x in fl:
+      print(x)
 
     
 if __name__ == "__main__":
